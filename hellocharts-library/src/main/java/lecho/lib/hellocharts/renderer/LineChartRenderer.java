@@ -340,12 +340,6 @@ public class LineChartRenderer extends AbstractChartRenderer {
                 final float secondControlPointY = currentPointY - (LINE_SMOOTHNESS * secondDiffY);
 
 
-
-                Log.e("Xxx", "firstControlPointX: "+firstControlPointX );
-                Log.e("Xxx", "firstControlPointY: "+firstControlPointY );
-                Log.e("Xxx", "secondControlPointX: "+secondControlPointX );
-                Log.e("Xxx", "secondControlPointY: "+secondControlPointY );
-
 //                path.quadTo(firstControlPointX, firstControlPointY, currentPointX, currentPointY);
                 path.cubicTo(firstControlPointX, firstControlPointY, secondControlPointX, secondControlPointY,
                         currentPointX, currentPointY);
